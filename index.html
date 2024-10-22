@@ -61,7 +61,6 @@
             color: white;
             border: none;
             padding: 10px;
-            font-size: 1.2em;
             border-radius: 5px;
         }
 
@@ -154,9 +153,9 @@
         });
 
         function updater() {
-            const quote = idezetek[currentIndex];
-            document.getElementById('uzenet').innerText = `"${quote.idezet}"`;
-            document.getElementById('szerzo').innerText = `– ${quote.szerzo}`;
+            const megjelenit = idezetek[currentIndex];
+            document.getElementById('uzenet').innerText = `"${megjelenit.idezet}"`;
+            document.getElementById('szerzo').innerText = `– ${megjelenit.szerzo}`;
 
             document.getElementById('bal').disabled = currentIndex === 0;
             document.getElementById('jobb').disabled = currentIndex === idezetek.length - 1;
